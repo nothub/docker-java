@@ -1,6 +1,6 @@
-ARG TINI="https://github.com/krallin/tini/releases/download/v0.19.0/tini"
+ARG TINI_VER="v0.19.0"
 
-ADD $TINI /sbin/tini
+ADD https://github.com/krallin/tini/releases/download/$TINI_VER/tini /sbin/tini
 RUN chmod +x /sbin/tini
 
 RUN addgroup --gid 10043 --system rootless \
