@@ -19,19 +19,19 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: prepare buildx jre8
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v1.3.0
         id: builder_jre8
 
       - name: prepare buildx jdk8
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v1.3.0
         id: builder_jdk8
 
       - name: prepare buildx jre11
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v1.3.0
         id: builder_jre11
 
       - name: prepare buildx jdk11
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v1.3.0
         id: builder_jdk11
 
       - name: build jre8
