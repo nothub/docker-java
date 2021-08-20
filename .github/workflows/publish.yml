@@ -36,7 +36,7 @@ jobs:
 
       - name: build jre8
         id: docker_build_jre8
-        uses: docker/build-push-action@v2.6.1
+        uses: docker/build-push-action@v2.7.0
         with:
           file: Dockerfile-jre8
           builder: ${{ steps.builder_jre8.outputs.name }}
@@ -46,7 +46,7 @@ jobs:
 
       - name: build jdk8
         id: docker_build_jdk8
-        uses: docker/build-push-action@v2.6.1
+        uses: docker/build-push-action@v2.7.0
         with:
           file: Dockerfile-jdk8
           builder: ${{ steps.builder_jdk8.outputs.name }}
@@ -56,7 +56,7 @@ jobs:
 
       - name: build jre11
         id: docker_build_jre11
-        uses: docker/build-push-action@v2.6.1
+        uses: docker/build-push-action@v2.7.0
         with:
           file: Dockerfile-jre11
           builder: ${{ steps.builder_jre11.outputs.name }}
@@ -67,7 +67,7 @@ jobs:
 
       - name: build jdk11
         id: docker_build_jdk11
-        uses: docker/build-push-action@v2.6.1
+        uses: docker/build-push-action@v2.7.0
         with:
           file: Dockerfile-jdk11
           builder: ${{ steps.builder_jdk11.outputs.name }}
